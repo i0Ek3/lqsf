@@ -27,6 +27,16 @@ mysql> show tables from test;
     - Use BIGINT or GUID type
 - Use `ADD INDEX index_name (name)` to create index for colunm name
     - Use `ADD UNIQUE INDEX uni_name (name)` or `ADD CONSTRAINT uni_name UNIQUE (name)` 
+- Query tips
+    - `SELECT * FROM table_name`
+    - `SELECT * FROM table_name WHERE condition`
+    - `SELECT a, b, c FROM table_name WHERE condition`
+    - `SELECT a, b, c FROM table_name WHERE condition ORDER BY field DESC`
+    - `SELECT a, b, c FROM table_name WHERE condition ORDER BY field DESC LIMIT 3 OFFSET 0` -- query first page which contain 3 items
+    - `SELECT count(*) alias_name FROM table_name`
+    - `SELECT * FROM table_name GROUP BY field`
+    - `SELECT * FROM table1_name, table2_name` -- be careful to use multi table query
+    - `SELECT field FROM table1 INNER JOIN table2 ON condition` -- INNER JOIN return data which exist in two tables, RIGHT OUTER JOIN and LEFT OUTER JOIN just returns coresponding data which exist in RIGHT or LEFT table, FULL OUTER JOIN return all data from tables
 
 ## Credit
 
