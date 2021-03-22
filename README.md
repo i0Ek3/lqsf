@@ -12,7 +12,6 @@ Use SQL easily after learning it.
 
 ## Usage
 
-
 ```
 $ mysql -uroot -p < init-test-data.sql
 
@@ -37,6 +36,21 @@ mysql> show tables from test;
     - `SELECT * FROM table_name GROUP BY field`
     - `SELECT * FROM table1_name, table2_name` -- be careful to use multi table query
     - `SELECT field FROM table1 INNER JOIN table2 ON condition` -- INNER JOIN return data which exist in two tables, RIGHT OUTER JOIN and LEFT OUTER JOIN just returns coresponding data which exist in RIGHT or LEFT table, FULL OUTER JOIN return all data from tables
+- Alter tips
+    - `INSERT [IGNORE] INTO table_name (field1, ...) VALUES (value1, ...)`
+    - `UPDATE table_name SET field1=value1, ... [WHERE condition]` -- [] means this is optional item 
+    - `DELETE FROM table_name [WHERE condition]`
+    - `CREATE DATABASE/TABLE db_name/table_name`
+    - `DROP DATABASE/TABLE db_name/table_name`
+    - `USE db_name`
+- Transaction
+    - ```
+BEGIN;
+-- SQL commands;
+-- SQL commands;
+-- SQL commands;
+COMMIT/ROLLBACK;
+```
 
 ## Credit
 
