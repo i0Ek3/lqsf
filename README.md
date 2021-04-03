@@ -6,9 +6,9 @@ Use SQL easily after learning it.
 
 ## Install & Run SQL
 
-- Download MySQL and install it, link: [https://dev.mysql.com/downloads/mysql/](https://dev.mysql.com/downloads/mysql/)
-- or use command: `brew install mysql`
-- Run it: `sudo mysql -u root -p`
+- Download MySQL and install it, download link: [https://dev.mysql.com/downloads/mysql/](https://dev.mysql.com/downloads/mysql/)
+- Or use command: `brew install mysql` to install mysql on macOS
+- And thenm run command: `sudo mysql -u root -p` to start mysql
 
 ## Usage
 
@@ -18,6 +18,7 @@ $ mysql -uroot -p < init-test-data.sql
 mysql> show databases;
 mysql> show tables from test;
 
+-- use following SQL commands to get results
 ```
 
 ## YSK
