@@ -8,7 +8,8 @@ Use SQL easily after learning it.
 
 - Download MySQL and install it, download link: [https://dev.mysql.com/downloads/mysql/](https://dev.mysql.com/downloads/mysql/)
 - Or use command: `brew install mysql` to install mysql on macOS
-- And thenm run command: `sudo mysql -u root -p` to start mysql
+- And then run command: `brew services start mysql` and `sudo mysql -u root -p` to start mysql
+> when terminal show you message to enter the password, just hit enter to pass it.
 
 ## Usage
 
